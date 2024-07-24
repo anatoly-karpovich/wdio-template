@@ -3,8 +3,6 @@ describe('Authentication', () => {
   const url = 'https://the-internet.herokuapp.com/';
   const expectedPageTitle = 'Login Page';
 
-  const generateSelector = (s: string) => `${s}`;
-
   before(async () => {
     await browser.maximizeWindow();
   });
