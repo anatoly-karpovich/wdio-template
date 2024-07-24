@@ -31,7 +31,7 @@ describe('Authentication', () => {
       const loginButton = await $('button.radius');
 
       await username.setValue(validCredentials.username);
-      await password.setValue(validCredentials.password1);
+      await password.setValue(validCredentials.password);
       await loginButton.click();
 
       const secretAreaNotification = await $('div.flash.success');
